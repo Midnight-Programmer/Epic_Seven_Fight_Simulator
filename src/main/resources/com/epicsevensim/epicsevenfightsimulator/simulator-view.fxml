@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.epicsevensim.epicsevenfightsimulator.EpicSevenController">
+    <MenuBar maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="900.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem mnemonicParsing="false" text="Close" />
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <MenuItem mnemonicParsing="false" text="About" />
+            <Menu mnemonicParsing="false" text="Edit">
+                <MenuItem mnemonicParsing="false" text="Delete" />
+            </Menu>
+        </Menu>
+    </MenuBar>
+    <Label id="hero1_text" layoutX="61.0" layoutY="140.0" text="Hero 1" />
+    <Label id="hero2_text" layoutX="61.0" layoutY="175.0" text="Hero 2" />
+    <Label id="hero3_text" layoutX="61.0" layoutY="210.0" text="Hero 3" />
+    <Label id="hero4_text" layoutX="61.0" layoutY="245.0" text="Hero 4" />
+    <Label id="attack_text" layoutX="269.0" layoutY="115.0" text="Attack" />
+    <Label id="defense_text" layoutX="324.0" layoutY="115.0" text="Defense" />
+    <Label id="health_text" layoutX="383.0" layoutY="115.0" text="Health" />
+    <Label id="speed_text" layoutX="446.0" layoutY="115.0" text="Speed" />
+    <Label id="crit_chance_text" layoutX="492.0" layoutY="115.0" text="Crit Chance" />
+    <Label id="crit_damage_text" layoutX="558.0" layoutY="115.0" text="Crit Dmg" />
+    <Label id="effectiveness_text" layoutX="612.0" layoutY="116.0" text="Effectiveness">
+        <font>
+          <Font size="10.0" />
+        </font>
+    </Label>
+    <Label id="effect_resist_text" layoutX="684.0" layoutY="115.0" text="Resist" />
+    <Label id="dual_attack_text" layoutX="733.0" layoutY="116.0" text="Dual Attack">
+        <font>
+          <Font size="10.0" />
+        </font>
+    </Label>
+    <ChoiceBox id="hero1_dropdown" fx:id="hero1_dropdown" layoutX="105.0" layoutY="137.0" onMouseClicked="#hero1DropdownSelected" prefHeight="17.0" prefWidth="150.0" />
+    <ChoiceBox id="hero2_dropdown" fx:id="hero2_dropdown" layoutX="105.0" layoutY="172.0" prefHeight="17.0" prefWidth="150.0" />
+    <ChoiceBox id="hero3_dropdown" fx:id="hero3_dropdown" layoutX="105.0" layoutY="207.0" prefHeight="17.0" prefWidth="150.0" />
+    <ChoiceBox id="hero4_dropdown" fx:id="hero4_dropdown" layoutX="105.0" layoutY="242.0" prefHeight="17.0" prefWidth="150.0" />
+    <TextField id="hero1_attack" fx:id="hero1_attack" layoutX="259.0" layoutY="137.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero1_defense" layoutX="318.0" layoutY="137.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero1_health" layoutX="377.0" layoutY="137.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero1_speed" layoutX="436.0" layoutY="137.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero1_crit_chance" layoutX="495.0" layoutY="137.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero1_crit_damage" layoutX="554.0" layoutY="137.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero1_effectiveness" layoutX="613.0" layoutY="137.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero1_effect_resist" layoutX="672.0" layoutY="137.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero1_dual_attack" layoutX="731.0" layoutY="137.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero2_attack" layoutX="259.0" layoutY="171.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero2_defense" layoutX="318.0" layoutY="171.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero2_health" layoutX="377.0" layoutY="171.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero2_speed" layoutX="436.0" layoutY="171.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero2_crit_chance" layoutX="495.0" layoutY="171.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero2_crit_damage" layoutX="554.0" layoutY="171.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero2_effectiveness" layoutX="613.0" layoutY="171.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero2_effect_resist" layoutX="672.0" layoutY="171.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero2_dual_attack" layoutX="731.0" layoutY="171.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero3_attack" layoutX="259.0" layoutY="207.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero3_defense" layoutX="318.0" layoutY="207.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero3_health" layoutX="377.0" layoutY="207.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero3_speed" layoutX="436.0" layoutY="207.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero3_crit_chance" layoutX="495.0" layoutY="207.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero3_crit_damage" layoutX="554.0" layoutY="207.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero3_effectiveness" layoutX="613.0" layoutY="207.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero3_effect_resist" layoutX="672.0" layoutY="207.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero3_dual_attack" layoutX="731.0" layoutY="207.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero4_attack" layoutX="259.0" layoutY="241.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero4_defense" layoutX="318.0" layoutY="241.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero4_health" layoutX="377.0" layoutY="241.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero4_speed" layoutX="436.0" layoutY="241.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero4_crit_chance" layoutX="495.0" layoutY="241.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero4_crit_damage" layoutX="554.0" layoutY="241.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero4_effectiveness" layoutX="613.0" layoutY="241.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero4_effect_resist" layoutX="672.0" layoutY="241.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <TextField id="hero4_dual_attack" layoutX="731.0" layoutY="241.0" prefHeight="25.0" prefWidth="55.0" promptText="0" />
+    <Button fx:id="button1" layoutX="689.0" layoutY="300.0" mnemonicParsing="false" onAction="#button1Press" text="Run Simulation" />
+</AnchorPane>
